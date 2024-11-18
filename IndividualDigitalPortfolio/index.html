@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marina Kisseljova - Portfolio</title>
+    <link rel="stylesheet" href="C:\Users\MK\Documents\GitHub\IndividualDigitalPortfolio\css\style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="C:\Users\MK\Documents\GitHub\IndividualDigitalPortfolio\jscripts\script.js"></script>
+</head>
+
+<body>
+<header>
+    <div class="header-content">
+        <div class="identity">
+            <div class="name">Marina Kisseljova</div>
+            <div class="title">Game & Software Developer</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about" onclick="earnPoints('about')"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#education" onclick="earnPoints('education')"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="#skills" onclick="earnPoints('skills')"><i class="fas fa-trophy"></i> Skills & Achievements</a></li>
+                <li><a href="#projects" onclick="earnPoints('projects')"><i class="fas fa-folder-open"></i> Projects</a></li>
+                <li><a href="#contact" onclick="earnPoints('contact')"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div id="game-info">
+    Points: <span id="points">0</span>
+    <br>
+    Achievements: <span id="achievements"></span>
+    <div id="exp-bar-container">
+        Experience: <span id="exp-progress">0/7</span>
+        <div id="exp-bar">
+            <div id="exp-fill"></div>
+        </div>
+    </div>
+</div>
+
+<div id="achievement-message">
+    <span id="message-text"></span>
+</div>
+
+<main>
+
+<section id="about" class="section about-section">
+    <div class="about-content">
+        <div class="about-text">
+            <h1>About</h1>
+            <p>
+                I'm a 32-year-old Game Design & Software Development student on the last year of my BSc Honors of Science degree, with a passion for cutting-edge
+                technologies, game development, and Virtual Reality.
+                
+                I am motivated and technically inclined student constantly improving my skill set.
+                
+                <br><br>Welcome to my portfolio, where creativity meets technical excellence!
+
+                If my page caught your interest, feel free to scroll down and search more about me from the links I have provided to my other social media accounts,
+                there are several links to my accounts and my resume down below.
+            </p>
+	
+            <div class="about-buttons">
+                <a href="C:\Users\MK\Documents\GitHub\IndividualDigitalPortfolio\docs\MarinaKisseljova_CV.pdf" class="button" target="_blank">Download CV</a>
+                <a href="#contact" class="button">Contact Me</a>
+            </div>
+        </div>
+        <div class="about-photo">
+            <img src="C:\Users\MK\Documents\GitHub\IndividualDigitalPortfolio\images\me.png" alt="Marina Kisseljova" class="profile-photo">
+        </div>
+    </div>
+</section>
+
+<section id="education" class="section">
+    <h2>Education</h2>
+    <div class="education-grid">
+        <div class="education-year">
+            <h3>Year 1</h3>
+            <div class="education-items">
+                <div class="education-item">
+                    <i class="fas fa-code"></i>
+                    <span>Software Development</span>
+                </div>
+                <div class="education-item">
+                    <i class="fas fa-calculator"></i>
+                    <span>Mathematics for Software Development</span>
+                </div>
+                <div class="education-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Mobile Apps & Connected Devices</span>
+                </div>
+                <div class="education-item">
+                    <i class="fas fa-globe"></i>
+                    <span>Web Application Development</span>
+                </div>
+                <div class="education-item">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Game Development</span>
+                </div>
+                <div class="education-item">
+                    <i class="fas fa-comments"></i>
+                    <span>Communications</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="education-year">
+            <h3>Year 2</h3>
+            <div class="education-items">
+                <div class="education-item">
+                    <i class="fas fa-calculator"></i>
+                    <span>Mathematics for Software Design</span>
+                </div>
+                <div class="education-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Software Development</span>
+                </div>
+                <div class="education-item">
+                    <i class="fas fa-sync-alt"></i>
+                    <span>Agile Methodologies</span>
+                </div>
+                <div class="education-item">
+                    <i class="fas fa-database"></i>
+                    <span>Databases</span>
+                </div>
+                <div class="education-item">
+                    <i class="fas fa-gamepad"></i>
+                    <span>Game Development</span>
+                </div>
+                <div class="education-item">
+                    <i class="fas fa-brain"></i>
+                    <span>Game AI and Physics</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="education-year">
+            <h3>Year 3</h3>
+            <div class="education-items">
+                <div class="education-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Software Development for Gaming</span>
+                </div>
+                <div class="education-item">
+                    <i class="fas fa-hdd"></i>
+                    <span>Game Hardware</span>
+                </div>
+                <div class="education-item">
+                    <i class="fas fa-vr-cardboard"></i>
+                    <span>VR Application Development</span>
+                </div>
+                <div class="education-item">
+                    <i class="fas fa-palette"></i>
+                    <span>Networks</span>
+                </div>
+                <div class="education-item">
+                    <i class="fas fa-hourglass"></i>
+                    <span>Software Development</span>
+                </div>
+                <div class="education-item">
+                    <i class="fas fa-server"></i>
+                    <span>Software Engineering</span>
+                </div>
+                <div class="education-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Placement</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="education-year">
+            <h3>Year 4</h3>
+            <div class="education-items">
+                <div class="education-item">
+                    <i class="fas fa-network-wired"></i>
+                    <span>Networks</span>
+                </div>
+                <div class="education-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Management & Organizational Behavior</span>
+                </div>
+                <div class="education-item">
+                    <i class="fas fa-vr-cardboard"></i>
+                    <span>VR & Gaming Technology</span>
+                </div>
+                <div class="education-item">
+                    <i class="fas fa-database"></i>
+                    <span>Databases</span>
+                </div>
+                <div class="education-item">
+                    <i class="fas fa-users"></i>
+                    <span>Data Visualisation</span>
+                </div>
+                <div class="education-item">
+                    <i class="fas fa-server"></i>
+                    <span>Project</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section">
+    <h2>Skills & Achievements</h2>
+
+    <div class="skills-graph-container">
+        <div class="skill-node" id="node1" data-connections="node2,node3">
+            <span>Programming</span>
+        </div>
+        <div class="skill-node" id="node2" data-connections="node1,node4">
+            <span>Game Development</span>
+        </div>
+        <div class="skill-node" id="node3" data-connections="node1,node5">
+            <span>VR Development</span>
+        </div>
+        <div class="skill-node" id="node4" data-connections="node2,node6">
+            <span>Communication</span>
+        </div>
+        <div class="skill-node" id="node5" data-connections="node3,node6">
+            <span>Project Management</span>
+        </div>
+        <div class="skill-node" id="node6" data-connections="node4,node5">
+            <span>Soft Skills</span>
+        </div>
+    </div>
+
+<!-- Certificates Section -->
+    <section id="certificates" class="section">
+        <h2>Certificates</h2>
+        <div class="certificates-gallery">
+
+            <div class="certificate-card">
+                <i class="fas fa-award"></i>
+                <h4>Bachelor of Science in Software Design</h4>
+                <a href="C:\Users\MK\Documents\GitHub\IndividualDigitalPortfolio\docs\1.2.pdf" download>
+                    <i class="fas fa-download"></i> Download
+                </a>
+                <a href="C:\Users\MK\Documents\GitHub\IndividualDigitalPortfolio\docs\2.2.pdf" download>
+                    <i class="fas fa-download"></i> Download
+                </a>
+                <a href="C:\Users\MK\Documents\GitHub\IndividualDigitalPortfolio\docs\3.3.pdf" download>
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+
+            <div class="certificate-card">
+                <i class="fas fa-award"></i>
+                <h4>Software Development Certificate</h4>
+                <a href="C:\Users\MK\Documents\GitHub\IndividualDigitalPortfolio\docs\June2021.jpg" download>
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+
+            <div class="certificate-card">
+                <i class="fas fa-award"></i>
+                <h4>Internet Certificate</h4>
+                <a href="C:\Users\MK\Documents\GitHub\IndividualDigitalPortfolio\docs\Internet.jpg" download>
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+
+            <div class="certificate-card">
+                <i class="fas fa-award"></i>
+                <h4>Web Authoring Certificate</h4>
+                <a href="C:\Users\MK\Documents\GitHub\IndividualDigitalPortfolio\docs\Web.jpg" download>
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+
+            <div class="certificate-card">
+                <i class="fas fa-award"></i>
+                <h4>Supervisory Management Certificate</h4>
+                <a href="C:\Users\MK\Documents\GitHub\IndividualDigitalPortfolio\docs\SupervisoryManagement.jpg" download>
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+
+            <div class="certificate-card">
+                <i class="fas fa-vr-cardboard"></i>
+                <h4>First Aid Response Certificate</h4>
+                <a href="C:\Users\MK\Documents\GitHub\IndividualDigitalPortfolio\docs\FirstAidResponse.jpg" download>
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+
+            <div class="certificate-card">
+                <i class="fas fa-award"></i>
+                <h4>Typing Skills Certificate</h4>
+                <a href="C:\Users\MK\Documents\GitHub\IndividualDigitalPortfolio\docs\TypingCertificate.pdf" download>
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+
+            <div class="certificate-card">
+                <i class="fas fa-award"></i>
+                <h4>Personality Type Assessment</h4>
+                <a href="C:/Users/MK/Documents/GitHub/IndividualDigitalPortfolio/docs/PersonalityType.pdf" download>
+                    <i class="fas fa-download"></i> Download
+                </a>
+            </div>
+        </div>
+    </section>
+    
+<!-- Achievements Section -->
+<div class="achievements">
+    <h3>Achievements</h3>
+    <div class="achievements-timeline">
+        <div class="achievement-card">
+            <i class="fas fa-trophy icon"></i>
+            <h4>Languages</h4>
+            <p>Multilingual: Fluent English and Russian, also have a working knowledge of Latvian.</p>
+        </div>
+        <div class="achievement-card">
+            <i class="fas fa-gamepad icon"></i>
+            <h4>Placement - Mobile App Creation Winner.</h4>
+            <p>Won the competition between the groups in inventing the application for a Carty Meats Company.</p>
+
+            <div class="link-container">
+                <a href="https://www.linkedin.com/feed/update/urn:li:activity:7199702060198412288/" target="_blank" class="linkedin-link">
+                    <i class="fab fa-linkedin"></i> LinkedIn Post
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+<section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="gallery">
+        <section id="projects" class="section">
+            <div class="projects-gallery">
+                <div class="project-card">
+                    <img src="C:\Users\MK\Documents\GitHub\IndividualDigitalPortfolio\images\ClubCard.jpg" alt="AR Project" />
+                    <h4>Augmented Reality Project</h4>
+                    <p>Developed an AR application using Unity and Vuforia SDK with QR code recognition.</p>
+                </div>
+
+                <div class="project-card">
+                    <h4>2D & 3D Game Development</h4>
+                    <div class="project-media">
+                        <video controls>
+                            <source src="C:\Users\MK\Documents\GitHub\IndividualDigitalPortfolio\videos\part1.mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="C:\Users\MK\Documents\GitHub\IndividualDigitalPortfolio\videos\Video1.mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="C:\Users\MK\Documents\GitHub\IndividualDigitalPortfolio\videos\A00300660PhysicsProject.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <p>Designed and developed engaging 2D & 3D games using Unity and C#.</p>
+                </div>
+
+                <div class="project-card">
+                    <h4>Web Development</h4>
+                    <div class="project-media">
+                        <video controls>
+                            <source src="C:\Users\MK\Documents\GitHub\IndividualDigitalPortfolio\videos\review.mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="C:\Users\MK\Documents\GitHub\IndividualDigitalPortfolio\videos\A00300660Semester2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <p>Created responsive websites.</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="C:\Users\MK\Documents\GitHub\IndividualDigitalPortfolio\images\VR.png" alt="VR Project" />
+                    <h4>VR Application Development</h4>
+                    <p>Developed immersive VR experiences using Oculus SDK and Unity.</p>
+                </div>
+
+                <div class="project-card">
+                    <h4>Mobile Application Development</h4>
+                    <div class="project-media">
+                        <video controls>
+                            <source src="C:\Users\MK\Documents\GitHub\IndividualDigitalPortfolio\videos\screencast.mp4" type="video/mp4">
+                        </video>
+                        <video controls>
+                            <source src="C:\Users\MK\Documents\GitHub\IndividualDigitalPortfolio\videos\game.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <p>Developed mobile applications.</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="C:\Users\MK\Documents\GitHub\IndividualDigitalPortfolio\images\detection.png" alt="Object Detection Project" />
+                    <h4>Object Detection with Python</h4>
+                    <p>Implemented object detection using Python and OpenCV methods.</p>
+                </div>
+            </div>
+        </section>
+        
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <div class="contact-container">
+
+        <div class="contact-item">
+            <i class="fas fa-envelope contact-icon"></i>
+            <h4>Email</h4>
+            <a href="mailto:kira9219k@gmail.com">kira9219k@gmail.com</a>
+        </div>
+
+        <div class="contact-item">
+            <i class="fas fa-phone-alt contact-icon"></i>
+            <h4>Phone</h4>
+            <a href="tel:+353 85 100 0972">+353 85 100 0972</a>
+        </div>
+
+        <div class="contact-item">
+            <i class="fab fa-linkedin contact-icon"></i>
+            <h4>LinkedIn</h4>
+            <a href="https://linkedin.com/in/marina-kisseljova/" target="_blank">linkedin.com/in/marina-kisseljova/</a>
+        </div>
+
+        <div class="contact-item">
+            <i class="fab fa-github contact-icon"></i>
+            <h4>GitHub</h4>
+            <a href="https://github.com/MK100503" target="_blank">github.com/MK100503</a>
+        </div>
+    </div>
+</section>
+
+<!-- Back to Top Button -->
+    <button id="back-to-top">&#8679;</button>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-icons">
+            <a href="https://linkedin.com/in/marina-kisseljova/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/MK100503" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:kira9219k@gmail.com" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p>© 2024 Marina Kisseljova. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
